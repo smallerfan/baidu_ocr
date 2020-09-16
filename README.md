@@ -9,7 +9,7 @@
 ## Install
 1.安装插件
 ```
-composer require smaller_fan/b_ocr
+composer require smaller_fan/b_ocr ^1.0.2
 ```
 
 
