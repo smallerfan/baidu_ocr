@@ -1,9 +1,11 @@
 {
     "name": "smaller_fan/b_ocr",
-    "description": "Third party message push",
+    "description": "Baidu OCR by smallerfan",
+    "keywords": ["ocr", "baidu", "chinese"],
     "authors": [
         {
-            "name": "Smaller Fan"
+            "name": "Smaller Fan",
+            "email": "951811171@qq.com"
         }
     ],
     "license": "MIT",
@@ -13,6 +15,10 @@
     "autoload": {
         "psr-4": {
             "SmallerFan\\BaiduOcr\\": "src/"
-        }
-    }
+        },
+        "files": [
+            "aip-php-sdk/AipOcr.php"
+        ]
+    },
+    "minimum-stability": "stable"
 }
