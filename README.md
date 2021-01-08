@@ -26,14 +26,21 @@ composer require smaller_fan/b_ocr ^1.0.2
 3.生成配置文件
 ```php
 php artisan vendor:publish
+
+生成之后会在项目 config 文件夹中出现 baiduocr.php 配置文件
+
+将百度OCR里的配置信息填入【APP_ID，API_KEY，SECRET_KEY】
+
+接下来就可以使用它啦~
 ```
+
 使用范例：
 ```php
 // new 个对象 ~ 
 $ocr = new BaiduOcr();
 //这个方法基于百度提供的方法，网络图片文字识别接口
 //【具体根据自己所需要的业务范围使用，参考路径:b_ocr/api-php-sdk/AipOcr.php】
-$res = $ocr->webImageUrl('http://img-oss.chengzhuan.vip/uploads/image/hZGLhHB5zEft34RZYVNu43KSHjZh0ir0.jpg');
+$res = $ocr->webImageUrl('http://*****.jpg');
 ```
 第一次封装包，欢迎ISSUES ,给个STAR吧~
 
